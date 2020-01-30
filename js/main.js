@@ -1,11 +1,21 @@
 'use strict';
 
-const score = 85;
+const score = 60;
+const name ='kazuki';
 
-// if (score >= 80) {
-//   console.log('Great!');
-// } else {
-//   console.log('OK...');
+// if (score >= 50) {
+//   if(name === 'kazuki') {
+//     console.log('Good job!');
+//   }
 // }
 
-score >= 80 ? console.log('Great!') : console.log('OK...');
+
+// 論理演算子について
+//&& なおかつ(AND)
+// || もしくは(OR)
+//! 〜ではない(NOT)
+
+
+if (score >= 50 && name === 'kazuki') {
+  console.log('Good job!');
+}
