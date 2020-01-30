@@ -1,10 +1,11 @@
 'use strict';
 
+const score = 85;
 
-let price = 150;
+// if (score >= 80) {
+//   console.log('Great!');
+// } else {
+//   console.log('OK...');
+// }
 
-price += 100; //250
-
-price *= 2; //500
-
-console.log(price * 140);
+score >= 80 ? console.log('Great!') : console.log('OK...');
