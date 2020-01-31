@@ -1,15 +1,16 @@
 'use strict';
 
-for (let i = 1; i <= 10; i++) {
-  // if (i === 4) {
-  //   if(i % 3 === 0) {
+ function showAd()  {
+   console.log('----------');
+   console.log('----Ad----');
+   console.log('----------');
+ }
 
-  //   }
-  // }
-
-
-  if (i === 4) {
-    break;
-  }
-  console.log(i);
-}
+ showAd();
+ console.log('Tom is great!');
+ console.log('Bob is great!');
+ showAd();
+ console.log('Steab is great!');
+ console.log('Richard is great!');
+ showAd();
+ 
