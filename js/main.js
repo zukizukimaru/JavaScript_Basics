@@ -2,12 +2,8 @@
 
 //スコープについて理解する。
 
-const x =2;
 
-function f() {
-  // const x =1;
+{
+  const x =300;
   console.log(x);
 }
-
-f();
-console.log(x);
