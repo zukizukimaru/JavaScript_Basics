@@ -1,15 +1,13 @@
 'use strict';
 
+//スコープについて理解する。
 
-// const sum = (a, b, c) => a + b +c;
+const x =2;
 
+function f() {
+  // const x =1;
+  console.log(x);
+}
 
-// const total =sum(1, 2, 3) + sum(3, 4, 5); //18
-// console.log(total);
-
-// const double = function(a) {
-//   return a * 2;
-// };
-
-const double = a => a * 2;
-console.log(double(12));
+f();
+console.log(x);
