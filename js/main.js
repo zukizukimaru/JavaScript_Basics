@@ -2,11 +2,13 @@
 
 {
 
-  const scores = [80, 90, 40, 70,];
+  const prices = [180, 190, 200];
+
+  // const updatedPrices = prices.map((price => {
+  //   return price + 20;
+  // });
   
-  // scores.forEach((score) => {
-  scores.forEach((score, index) => {
-      console.log(`Score ${index}: ${score}`); 
-  });
-  
+  const updatedPrices = prices.map(price => price + 20);
+  console.log(updatedPrices);
+
 }
