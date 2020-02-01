@@ -2,13 +2,14 @@
 
 {
   const scores = [80, 90, 40];
-  // console.log(scores[1]);
+  
+  // console.log(`Score: ${scores[0]}`);
+  // console.log(`Score: ${scores[1]}`);
+  // console.log(`Score: ${scores[2]}`);
 
-  // scores[2] = 44;
-  // console.log(scores);
-
-  // scores = 10;
-
-  console.log(scores.length);
+  // for (let i = 0; i < 3; i++) {
+    for (let i =0; i < scores.length; i++) {
+      console.log(`Score ${i}; ${scores[i]}`);
+    }
 
 }
