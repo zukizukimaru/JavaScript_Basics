@@ -1,14 +1,10 @@
 'use strict';
 
 {
-
-// console.log(Math.random());//数字をランダムに表示
-
-// 0, 1, 2 
-// Math,floor(Math.random() * 3)
-// 0, ..., n 
-// Math.floor(Math.random() * (n + 1))
-// min, ..., max 
-console.log(Math.floor(Math.random() * 6)  + 1);
+const d = new Date(2019, 10); //2019/11/01 00:00:00
+d.setHours(10, 20, 30);//2019/11/01/10:20:30
+d.setDate(31);//2019/12/01 10:20:30
+d.setDate(d.getDate() + 3);//2019/12/01 10:20:30
+console.log(d);
 
 }
