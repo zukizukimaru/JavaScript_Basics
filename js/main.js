@@ -3,25 +3,36 @@
 {
   class Post {
     constructor(text) {
-    this.text = text;
-    this.likeCount = 0;
+      this.text = text;
+      this.likeCount = 0;
     }
 
-  show() {
-    console.log(`${this.text} - ${this.likeCount}いいね`);
+    show() {
+      console.log(`${this.text} - ${this.likeCount} likes`);
+    }
+
+    like() {
+      this.likeCount++;
+      this.show();
+
+    }
   }
+
+  const posts = [
+    new Post('JavaScriptの勉強中...'),
+    new Post('プログラミング楽しい！'),
+
+  ];
+
+
+  posts[0].like();
+
+  // posts[0].show();
+  // posts[1].show();
+
 }
 
-const posts = [
-  new Post('JavaScriptの勉強中...'),
-  new Post('プログラミング楽しい！'),
-];
-
-
-posts[0].show();
-posts[1].show();
-
-}
+//機能の拡張が簡単になるので、プロパティは直接操作せずにメソッドを介して操作するようにしてあげましょう。
 
 
 
