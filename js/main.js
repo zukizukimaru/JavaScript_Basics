@@ -1,17 +1,30 @@
 'use strict';
 
 {
- 
-  // const name = 'wako'
-  const name ='5'
 
-  try {
-    console.log(name.toUpperCase());
-  } catch (e) {
-    console,log(e);
-  }
+  const posts = [
+    {
+      text: 'javascriptの勉強中...',
+      likeCount: 0,
+      // show: function() {
+      //   console.log(`${this.text} - ${this.likeCount}いいね`);
+      show() {
+        console.log(`${this.text} - ${this.likeCount}いいね`);
+      },
+    },
+    {
+      text: 'プログラミング楽しい！',
+      likeCount: 0,
+    },
+  ];
 
-  console.log('Finish!');
+  // show(posts[0]);
+posts[0].show();
+
 }
 
-//開発者が想定していなかった理由で起きるエラーを例外と言います。
+
+  
+
+
+
