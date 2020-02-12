@@ -16,6 +16,12 @@
       this.show();
 
     }
+
+    //静的メソッド
+    //thisは使えない
+    static showInfo() {
+      console.log('Post class version 1.0')
+    }
   }
 
   const posts = [
@@ -25,15 +31,10 @@
   ];
 
 
-  posts[0].like();
-
-  // posts[0].show();
-  // posts[1].show();
+  Post.showInfo();
+  
 
 }
-
-//機能の拡張が簡単になるので、プロパティは直接操作せずにメソッドを介して操作するようにしてあげましょう。
-
 
 
 
