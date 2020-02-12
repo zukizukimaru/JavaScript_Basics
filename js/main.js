@@ -1,16 +1,17 @@
 'use strict';
 
 {
-  let i = 0;
+ 
+  // const name = 'wako'
+  const name ='5'
 
-  function showTime() {
-    console.log(new Date());
-    const timeoutId =setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timeoutId);
-    }
-  };
+  try {
+    console.log(name.toUpperCase());
+  } catch (e) {
+    console,log(e);
+  }
 
-  showTime();
+  console.log('Finish!');
 }
+
+//開発者が想定していなかった理由で起きるエラーを例外と言います。
