@@ -17,23 +17,35 @@
 
     }
 
-    //静的メソッド
-    //thisは使えない
-    static showInfo() {
-      console.log('Post class version 1.0')
+  }
+  class SponsoredPost {
+    constructor(text, sponsor) {
+      this.text = text;
+      this.likeCount = 0;
+      this.sponsor = sponsor;
     }
+
+    show() {
+      console.log(`${this.text} - ${this.likeCount} likes`);
+      console.log(`... sponsored by ${this.sponsor}`);
+    }
+
+    like() {
+      this.likeCount++;
+      this.show();
+
+    }
+
   }
 
   const posts = [
     new Post('JavaScriptの勉強中...'),
     new Post('プログラミング楽しい！'),
-
+    new SponsoredPost('3分間動画でマスターしよう', 'dotinstall'),
   ];
 
-
-  Post.showInfo();
-  
-
+  posts[2].show();
+  posts[2].like();
 }
 
 
