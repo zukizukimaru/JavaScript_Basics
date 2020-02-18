@@ -6,8 +6,13 @@
 
   });
 
-  document.addEventListener('mousemove' , () => {
-    console.log('moved!');
+  // document.addEventListener('mousemove' , e => {
+  //   // console.log('moved!');
+  //   console.log(e.clientX, e.clientY);
+  // });
+
+  document.addEventListener('keydown' , e => {
+    console.log(e.key);
   });
   
 }
